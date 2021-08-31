@@ -28,7 +28,7 @@ urlpatterns = [
     path("settings/account", account_views.UpdateView.as_view(), name='my_account'),
     path(
         "settings/password",
-        auth_views.PasswordChangeView.as_view(template_name='password_change.html'),
+        auth_views.PasswordChangeView.as_view(template_name='password_change_form.html'),
         name='password_change'
     ),
     path(
